@@ -243,8 +243,13 @@
 
     /* ===== PROJECTS ===== */
     #project { padding: 110px 6%; background: var(--dark); }
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-top: 56px; }
-    .project-card {
+    .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 56px;
+    align-items: start; /* ← ajoute ça */
+}
       border: 1px solid rgba(123,127,212,0.18); border-radius: 10px;
       overflow: hidden; background: var(--mid);
       transition: box-shadow 0.4s, transform 0.3s, border-color 0.3s;
@@ -258,7 +263,14 @@
       font-family: 'Libre Baskerville', serif; font-size: 60px;
       color: var(--accent2); background: linear-gradient(135deg, #1e1e38 0%, #252545 100%);
     }
-    .proj-body { padding: 26px; }
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj-body {
+    flex: 1; /* ← remplit l'espace restant */
+}
     .proj-tag {
       display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 2px;
       text-transform: uppercase; color: var(--accent2);
