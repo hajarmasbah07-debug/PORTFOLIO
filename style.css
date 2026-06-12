@@ -167,7 +167,8 @@
     .section-label {
       font-size: 10px; font-weight: 600; letter-spacing: 3px;
       text-transform: uppercase; color: var(--accent2);
-      display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+      display: flex; align-items: center; gap: 12px; margin-bottom: 25px;
+     margin-top:20px;
     }
     .section-label::before { content: ''; display: block; width: 22px; height: 1px; background: var(--accent2); }
     .section-title {
