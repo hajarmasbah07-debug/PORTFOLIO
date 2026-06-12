@@ -93,12 +93,12 @@
 
     /* ===== HERO ===== */
   #home {
-  min-height: 100vh;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 6%;
+  padding: 80px 6% 60px 6%;
   position: relative;
   overflow: hidden;
   text-align: center;
