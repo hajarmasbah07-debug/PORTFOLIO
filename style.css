@@ -143,7 +143,7 @@
       margin: 20px 0 38px; max-width: 400px; line-height: 1.75;
       
     }
-    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 13px 30px; background: var(--accent); color: var(--white);
